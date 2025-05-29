@@ -38,6 +38,42 @@ const ExperienceSection = () => {
         'Learned React, Node.js, and modern development practices',
         'Contributed to open-source projects'
       ]
+    },
+    {
+      title: 'Intern Developer',
+      company: 'CodeLab',
+      period: '2018 - 2019',
+      location: 'New York, NY',
+      description: 'Assisted in developing internal tools and automation scripts. Participated in code reviews and team meetings.',
+      achievements: [
+        'Automated data entry tasks saving 10+ hours/week',
+        'Wrote documentation for internal APIs',
+        'Presented at company tech talks'
+      ]
+    },
+    {
+      title: 'Freelance Web Developer',
+      company: 'Self-Employed',
+      period: '2017 - 2018',
+      location: 'Remote',
+      description: 'Worked with small businesses to create and maintain their web presence. Delivered custom solutions based on client needs.',
+      achievements: [
+        'Launched 5+ business websites',
+        'Provided ongoing support and SEO optimization',
+        'Built custom WordPress themes'
+      ]
+    },
+    {
+      title: 'Teaching Assistant',
+      company: 'University of Example',
+      period: '2016 - 2017',
+      location: 'Boston, MA',
+      description: 'Supported students in introductory programming courses. Helped design assignments and grade projects.',
+      achievements: [
+        'Tutored 100+ students in programming fundamentals',
+        'Created interactive coding exercises',
+        'Received recognition for student support'
+      ]
     }
   ];
 
@@ -71,11 +107,10 @@ const ExperienceSection = () => {
 
           {experiences.map((exp, index) => (
             <motion.div
-              key={exp.title}
+              key={exp.title + exp.company}
               initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
               className="relative mb-12 md:ml-16"
             >
               {/* Timeline dot */}

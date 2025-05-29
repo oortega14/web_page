@@ -23,6 +23,27 @@ const BlogSection = () => {
       date: '2024-03-05',
       readTime: '6 min read',
       tags: ['TypeScript', 'JavaScript', 'Best Practices']
+    },
+    {
+      title: 'Optimizing React Performance',
+      excerpt: 'How to profile and optimize React apps for speed, including memoization, lazy loading, and avoiding unnecessary renders.',
+      date: '2024-02-28',
+      readTime: '10 min read',
+      tags: ['React', 'Performance', 'Frontend']
+    },
+    {
+      title: 'Deploying with Docker and GitHub Actions',
+      excerpt: 'A step-by-step guide to containerizing your app and setting up CI/CD pipelines using Docker and GitHub Actions.',
+      date: '2024-02-20',
+      readTime: '9 min read',
+      tags: ['DevOps', 'Docker', 'CI/CD']
+    },
+    {
+      title: 'Accessible Web Design Essentials',
+      excerpt: 'Key principles and tools for making your web applications accessible to everyone, including ARIA roles and keyboard navigation.',
+      date: '2024-02-10',
+      readTime: '7 min read',
+      tags: ['Accessibility', 'Web Design', 'Best Practices']
     }
   ];
 
@@ -50,14 +71,13 @@ const BlogSection = () => {
           </motion.p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post, index) => (
             <motion.article
               key={post.title}
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
               className="bg-slate-800 rounded-xl p-6 hover:bg-slate-750 transition-colors cursor-pointer group"
             >
               <div className="mb-4">
@@ -99,9 +119,8 @@ const BlogSection = () => {
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
           className="text-center mt-12"
         >
           <motion.button

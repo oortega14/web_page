@@ -26,6 +26,30 @@ const ProjectsSection = () => {
       image: 'https://images.pexels.com/photos/16053029/pexels-photo-16053029.jpeg',
       github: 'https://github.com',
       demo: 'https://demo.com'
+    },
+    {
+      title: 'Portfolio Website',
+      description: 'Personal portfolio website built with Next.js and Tailwind CSS. Fully responsive and SEO optimized.',
+      tech: ['Next.js', 'Tailwind CSS', 'Vercel'],
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6',
+      github: 'https://github.com',
+      demo: 'https://demo.com'
+    },
+    {
+      title: 'Chat Application',
+      description: 'Real-time chat application with private rooms and emoji support. Built using React and Firebase.',
+      tech: ['React', 'Firebase', 'Tailwind CSS'],
+      image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308',
+      github: 'https://github.com',
+      demo: 'https://demo.com'
+    },
+    {
+      title: 'Blog Platform',
+      description: 'Multi-user blog platform with markdown support and comments. Built with Django and React.',
+      tech: ['Django', 'React', 'SQLite'],
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb',
+      github: 'https://github.com',
+      demo: 'https://demo.com'
     }
   ];
 
@@ -53,14 +77,13 @@ const ProjectsSection = () => {
           </motion.p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
               className="bg-slate-800 rounded-xl overflow-hidden hover:bg-slate-750 transition-colors group"
             >
               <div className="relative overflow-hidden">
