@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { Mail, Github, ChevronDown } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background */}
@@ -43,9 +46,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Hi, I'm{' '}
+            {t('hero.greeting')}{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-              Oscar Developer
+              {t('hero.name')}
             </span>
           </h1>
           
@@ -55,10 +58,10 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Full-Stack Developer specializing in{' '}
-            <span className="text-blue-400 font-semibold">Ruby on Rails</span>,{' '}
-            <span className="text-green-400 font-semibold">React</span>, and{' '}
-            <span className="text-purple-400 font-semibold">TypeScript</span>
+            {t('hero.subtitle.part1')}{' '}
+            <span className="text-blue-400 font-semibold">{t('hero.skills.rails')}</span>,{' '}
+            <span className="text-green-400 font-semibold">{t('hero.skills.react')}</span>, {t('hero.subtitle.and')}{' '}
+            <span className="text-purple-400 font-semibold">{t('hero.skills.ts')}</span>
           </motion.p>
 
           <motion.div
@@ -68,16 +71,16 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30">
-              Ruby on Rails
+              {t('hero.skills.rails')}
             </span>
             <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-full border border-green-500/30">
-              React 19
+              {t('hero.skills.react19')}
             </span>
             <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">
-              TypeScript
+              {t('hero.skills.ts')}
             </span>
             <span className="px-4 py-2 bg-yellow-500/20 text-yellow-300 rounded-full border border-yellow-500/30">
-              Python
+              {t('hero.skills.python')}
             </span>
           </motion.div>
 
@@ -94,7 +97,7 @@ const HeroSection = () => {
               whileTap={{ scale: 0.95 }}
             >
               <Mail size={20} />
-              <span>Get in Touch</span>
+              <span>{t('hero.cta')}</span>
             </motion.a>
             
             <motion.a

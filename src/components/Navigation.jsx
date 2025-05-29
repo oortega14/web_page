@@ -1,16 +1,22 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, User, Code, Briefcase, BookOpen } from 'lucide-react';
+import { Menu, X, User, Code, Briefcase, BookOpen, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Navigation = ({ activeTab, setActiveTab }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const tabs = [
-    { id: 'home', label: 'Home', icon: User },
-    { id: 'projects', label: 'Projects', icon: Code },
-    { id: 'experience', label: 'Experience', icon: Briefcase },
-    { id: 'blog', label: 'Blog', icon: BookOpen }
+    { id: 'home', label: t('nav.home'), icon: User },
+    { id: 'projects', label: t('nav.projects'), icon: Code },
+    { id: 'experience', label: t('nav.experience'), icon: Briefcase },
+    { id: 'blog', label: t('nav.blog'), icon: BookOpen }
   ];
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en');
+  };
 
   return (
     <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 z-50">
@@ -22,11 +28,11 @@ const Navigation = ({ activeTab, setActiveTab }) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Portfolio
+            Oscar's Portfolio
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 items-center">
             {tabs.map((tab) => {
               const Icon = tab.icon;
               return (
@@ -46,10 +52,27 @@ const Navigation = ({ activeTab, setActiveTab }) => {
                 </motion.button>
               );
             })}
+            {/* Language Switch Button */}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center space-x-1 px-3 py-2 rounded-lg text-slate-300 hover:text-blue-400 transition-colors border border-slate-700 ml-4"
+              aria-label="Change language"
+            >
+              <Globe size={18} />
+              <span className="text-sm uppercase">{i18n.language === 'en' ? 'ES' : 'EN'}</span>
+            </button>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center">
+            {/* Language Switch Button (Mobile) */}
+            <button
+              onClick={toggleLanguage}
+              className="mr-2 text-slate-300 hover:text-blue-400"
+              aria-label="Change language"
+            >
+              <Globe size={22} />
+            </button>
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-slate-300 hover:text-blue-400"

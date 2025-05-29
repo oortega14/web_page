@@ -1,0 +1,191 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "blog": "Blog"
+  },
+  "footer": {
+    "cta": "¡Construyamos algo increíble juntos!",
+    "copyright": "© 2025 Oscar Developer. Hecho con React 19 y mucho ☕"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Oscar Developer",
+    "subtitle": {
+      "part1": "Desarrollador Full-Stack especializado en",
+      "and": "y"
+    },
+    "skills": {
+      "rails": "Ruby on Rails",
+      "react": "React",
+      "react19": "React 19",
+      "ts": "TypeScript",
+      "python": "Python"
+    },
+    "cta": "Contáctame"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Desarrollador full-stack apasionado con más de 5 años de experiencia construyendo aplicaciones web escalables. Me encanta crear interfaces atractivas y sistemas backend robustos.",
+    "skillsTitle": "Habilidades y Tecnologías",
+    "linkedin": "LinkedIn",
+    "contact": "Contáctame"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Aquí algunos de mis proyectos recientes que muestran mis habilidades en desarrollo full-stack y tecnologías web modernas.",
+    "code": "Código",
+    "demo": "Demo",
+    "ecommerce": {
+      "title": "Plataforma E-Commerce",
+      "description": "Solución e-commerce full-stack construida con Rails API y frontend en React. Incluye autenticación de usuarios, pagos y panel de administración."
+    },
+    "task": {
+      "title": "App de Gestión de Tareas",
+      "description": "Aplicación colaborativa para gestión de tareas con actualizaciones en tiempo real. Construida con TypeScript y funcionalidad de arrastrar y soltar."
+    },
+    "dashboard": {
+      "title": "Dashboard de Visualización de Datos",
+      "description": "Dashboard interactivo para visualización de datos con gráficos, filtros y datos en tiempo real. Optimizado para rendimiento y experiencia de usuario."
+    },
+    "portfolio": {
+      "title": "Sitio Web de Portafolio",
+      "description": "Sitio web personal de portafolio construido con Next.js y Tailwind CSS. Totalmente responsivo y optimizado para SEO."
+    },
+    "chat": {
+      "title": "Aplicación de Chat",
+      "description": "Aplicación de chat en tiempo real con salas privadas y soporte de emojis. Construida usando React y Firebase."
+    },
+    "blog": {
+      "title": "Últimas Publicaciones del Blog",
+      "subtitle": "Reflexiones sobre desarrollo web, tutoriales y aprendizajes de mi experiencia creando aplicaciones modernas.",
+      "readMore": "Leer más",
+      "viewAll": "Ver todas las publicaciones",
+      "tags": {
+        "rails": "Ruby on Rails",
+        "api": "API",
+        "backend": "Backend",
+        "react": "React",
+        "javascript": "JavaScript",
+        "frontend": "Frontend",
+        "typescript": "TypeScript",
+        "bestpractices": "Buenas Prácticas",
+        "performance": "Rendimiento",
+        "devops": "DevOps",
+        "docker": "Docker",
+        "cicd": "CI/CD",
+        "accessibility": "Accesibilidad",
+        "webdesign": "Diseño Web"
+      },
+      "posts": {
+        "rails": {
+          "title": "Construyendo APIs Rails Escalables",
+          "excerpt": "Mejores prácticas para crear endpoints API robustos y escalables con Ruby on Rails, incluyendo autenticación, serialización y optimización de rendimiento.",
+          "readTime": "8 min lectura"
+        },
+        "react19": {
+          "title": "Novedades de React 19 en Profundidad",
+          "excerpt": "Explorando las últimas características de React 19, incluyendo el nuevo compilador, funciones concurrentes y mejoras para desarrolladores.",
+          "readTime": "12 min lectura"
+        },
+        "ts": {
+          "title": "Tips de TypeScript para Mejor Código",
+          "excerpt": "Técnicas avanzadas de TypeScript para que tu código sea más seguro, mantenible y agradable de trabajar.",
+          "readTime": "6 min lectura"
+        },
+        "reactperf": {
+          "title": "Optimizando el Rendimiento de React",
+          "excerpt": "Cómo perfilar y optimizar apps React para velocidad, incluyendo memoización, carga diferida y evitar renders innecesarios.",
+          "readTime": "10 min lectura"
+        },
+        "docker": {
+          "title": "Despliegue con Docker y GitHub Actions",
+          "excerpt": "Guía paso a paso para contenerizar tu app y configurar pipelines CI/CD usando Docker y GitHub Actions.",
+          "readTime": "9 min lectura"
+        },
+        "accessibility": {
+          "title": "Esenciales de Accesibilidad Web",
+          "excerpt": "Principios y herramientas clave para hacer tus aplicaciones web accesibles para todos, incluyendo roles ARIA y navegación por teclado.",
+          "readTime": "7 min lectura"
+        }
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Mi trayectoria profesional en desarrollo de software, construyendo productos increíbles y creciendo como desarrollador.",
+    "senior": {
+      "title": "Desarrollador Full-Stack Senior",
+      "company": "TechCorp Inc.",
+      "period": "2022 - Presente",
+      "location": "San Francisco, CA",
+      "description": "Lideré el desarrollo de aplicaciones web escalables usando Ruby on Rails y React. Mentor de desarrolladores junior y arquitecto de soluciones.",
+      "achievements": [
+        "Reduje el tiempo de carga de la aplicación en un 40% mediante optimización",
+        "Lideré un equipo de 5 desarrolladores en una gran renovación de producto",
+        "Implementé pipeline CI/CD reduciendo el tiempo de despliegue en un 60%"
+      ]
+    },
+    "fullstack": {
+      "title": "Desarrollador Full-Stack",
+      "company": "StartupXYZ",
+      "period": "2020 - 2022",
+      "location": "Austin, TX",
+      "description": "Desarrollé y mantuve múltiples aplicaciones para clientes usando tecnologías web modernas. Colaboré con equipos de diseño y producto.",
+      "achievements": [
+        "Construí 3 aplicaciones en producción desde cero",
+        "Integré sistemas de pago y APIs de terceros",
+        "Mejoré la cobertura de tests del 30% al 95%"
+      ]
+    },
+    "junior": {
+      "title": "Desarrollador Junior",
+      "company": "WebDev Solutions",
+      "period": "2019 - 2020",
+      "location": "Remoto",
+      "description": "Inicié mi carrera construyendo sitios web responsivos y aprendiendo desarrollo full-stack. Experiencia en metodologías ágiles.",
+      "achievements": [
+        "Completé exitosamente más de 20 proyectos para clientes",
+        "Aprendí React, Node.js y prácticas modernas de desarrollo",
+        "Contribuí a proyectos open-source"
+      ]
+    },
+    "intern": {
+      "title": "Desarrollador Interno",
+      "company": "CodeLab",
+      "period": "2018 - 2019",
+      "location": "Nueva York, NY",
+      "description": "Asistí en el desarrollo de herramientas internas y scripts de automatización. Participé en revisiones de código y reuniones de equipo.",
+      "achievements": [
+        "Automatización de tareas de entrada de datos ahorrando 10+ horas/semana",
+        "Escribí documentación para APIs internas",
+        "Presenté en charlas técnicas de la empresa"
+      ]
+    },
+    "freelance": {
+      "title": "Desarrollador Web Freelance",
+      "company": "Autónomo",
+      "period": "2017 - 2018",
+      "location": "Remoto",
+      "description": "Trabajé con pequeñas empresas para crear y mantener su presencia web. Entregué soluciones personalizadas según las necesidades del cliente.",
+      "achievements": [
+        "Lancé más de 5 sitios web empresariales",
+        "Brindé soporte continuo y optimización SEO",
+        "Construí temas personalizados de WordPress"
+      ]
+    },
+    "ta": {
+      "title": "Asistente de Enseñanza",
+      "company": "Universidad de Ejemplo",
+      "period": "2016 - 2017",
+      "location": "Boston, MA",
+      "description": "Apoyé a estudiantes en cursos introductorios de programación. Ayudé a diseñar tareas y calificar proyectos.",
+      "achievements": [
+        "Tutoría a más de 100 estudiantes en fundamentos de programación",
+        "Creé ejercicios interactivos de código",
+        "Recibí reconocimiento por apoyo a estudiantes"
+      ]
+    }
+  }
+}

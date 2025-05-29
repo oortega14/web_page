@@ -1,8 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Github, Linkedin } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="border-t border-slate-700 py-12">
         <div className="max-w-6xl mx-auto px-4 text-center">
@@ -13,7 +16,7 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             <p className="text-slate-400 mb-6">
-              Let's build something amazing together!
+              {t('footer.cta')}
             </p>
             
             <div className="flex justify-center space-x-6 mb-6">
@@ -45,7 +48,7 @@ const Footer = () => {
             </div>
             
             <p className="text-slate-500 text-sm">
-              © 2025 Oscar Developer. Built with React 19 and lots of ☕
+              {t('footer.copyright')}
             </p>
           </motion.div>
         </div>

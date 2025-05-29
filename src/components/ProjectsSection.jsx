@@ -1,51 +1,54 @@
 import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const ProjectsSection = () => {
+  const { t } = useTranslation();
+
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution built with Rails API and React frontend. Features include user authentication, payment processing, and admin dashboard.',
+      title: t('projects.ecommerce.title'),
+      description: t('projects.ecommerce.description'),
       tech: ['Ruby on Rails', 'React', 'PostgreSQL', 'Stripe'],
       image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b',
       github: 'https://github.com',
       demo: 'https://demo.com'
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative task management application with real-time updates. Built with TypeScript and featuring drag-and-drop functionality.',
+      title: t('projects.task.title'),
+      description: t('projects.task.description'),
       tech: ['TypeScript', 'React', 'Node.js', 'Socket.io'],
       image: 'https://images.pexels.com/photos/5475750/pexels-photo-5475750.jpeg',
       github: 'https://github.com',
       demo: 'https://demo.com'
     },
     {
-      title: 'Data Visualization Dashboard',
-      description: 'Interactive dashboard for data visualization with charts, filters, and real-time data updates. Optimized for performance and user experience.',
+      title: t('projects.dashboard.title'),
+      description: t('projects.dashboard.description'),
       tech: ['React', 'D3.js', 'Node.js', 'MongoDB'],
       image: 'https://images.pexels.com/photos/16053029/pexels-photo-16053029.jpeg',
       github: 'https://github.com',
       demo: 'https://demo.com'
     },
     {
-      title: 'Portfolio Website',
-      description: 'Personal portfolio website built with Next.js and Tailwind CSS. Fully responsive and SEO optimized.',
+      title: t('projects.portfolio.title'),
+      description: t('projects.portfolio.description'),
       tech: ['Next.js', 'Tailwind CSS', 'Vercel'],
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6',
       github: 'https://github.com',
       demo: 'https://demo.com'
     },
     {
-      title: 'Chat Application',
-      description: 'Real-time chat application with private rooms and emoji support. Built using React and Firebase.',
+      title: t('projects.chat.title'),
+      description: t('projects.chat.description'),
       tech: ['React', 'Firebase', 'Tailwind CSS'],
       image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308',
       github: 'https://github.com',
       demo: 'https://demo.com'
     },
     {
-      title: 'Blog Platform',
-      description: 'Multi-user blog platform with markdown support and comments. Built with Django and React.',
+      title: t('projects.blog.title'),
+      description: t('projects.blog.description'),
       tech: ['Django', 'React', 'SQLite'],
       image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb',
       github: 'https://github.com',
@@ -64,7 +67,7 @@ const ProjectsSection = () => {
           className="text-center mb-16 pt-8"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Featured Projects
+            {t('projects.title')}
           </h2>
           <motion.p 
             initial={{ opacity: 0, y: 10 }}
@@ -72,8 +75,7 @@ const ProjectsSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-slate-300 max-w-3xl mx-auto"
           >
-            Here are some of my recent projects that showcase my skills in 
-            full-stack development and modern web technologies.
+            {t('projects.subtitle')}
           </motion.p>
         </motion.div>
 
@@ -121,7 +123,7 @@ const ProjectsSection = () => {
                     whileHover={{ scale: 1.05 }}
                   >
                     <Github size={16} />
-                    <span className="text-sm">Code</span>
+                    <span className="text-sm">{t('projects.code')}</span>
                   </motion.a>
                   
                   <motion.a
@@ -132,7 +134,7 @@ const ProjectsSection = () => {
                     whileHover={{ scale: 1.05 }}
                   >
                     <ExternalLink size={16} />
-                    <span className="text-sm">Demo</span>
+                    <span className="text-sm">{t('projects.demo')}</span>
                   </motion.a>
                 </div>
               </div>

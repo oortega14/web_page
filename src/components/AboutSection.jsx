@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { Linkedin, Mail } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const AboutSection = () => {
+  const { t } = useTranslation();
+
   const skills = [
     { name: 'Ruby on Rails', level: 95, color: 'bg-red-500' },
     { name: 'PostgreSQL', level: 90, color: 'bg-indigo-500' },
@@ -22,12 +25,10 @@ const AboutSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            About Me
+            {t('about.title')}
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Passionate full-stack developer with 5+ years of experience building 
-            scalable web applications. I love creating beautiful, user-friendly 
-            interfaces and robust backend systems.
+            {t('about.description')}
           </p>
         </motion.div>
 
@@ -53,7 +54,7 @@ const AboutSection = () => {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold text-white mb-4">Skills & Technologies</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">{t('about.skillsTitle')}</h3>
               <div className="space-y-4">
                 {skills.map((skill, index) => (
                   <div key={skill.name}>
@@ -84,7 +85,7 @@ const AboutSection = () => {
                 whileHover={{ scale: 1.05 }}
               >
                 <Linkedin size={18} />
-                <span>LinkedIn</span>
+                <span>{t('about.linkedin')}</span>
               </motion.a>
               
               <motion.a
@@ -93,7 +94,7 @@ const AboutSection = () => {
                 whileHover={{ scale: 1.05 }}
               >
                 <Mail size={18} />
-                <span>Contact Me</span>
+                <span>{t('about.contact')}</span>
               </motion.a>
             </div>
           </motion.div>

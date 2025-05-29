@@ -9,6 +9,7 @@ import BlogSection from './components/BlogSection';
 import { Mail, Github, Linkedin } from 'lucide-react';
 import './App.css';
 import Footer from './components/Footer';
+import './i18n';
 
 // Main App Component
 function App() {

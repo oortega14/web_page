@@ -1,0 +1,195 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "experience": "Experience",
+    "blog": "Blog"
+  },
+  "footer": {
+    "cta": "Let's build something amazing together!",
+    "copyright": "© 2025 Oscar Developer. Built with React 19 and lots of ☕"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Oscar Developer",
+    "subtitle": {
+      "part1": "Full-Stack Developer specializing in",
+      "and": "and"
+    },
+    "skills": {
+      "rails": "Ruby on Rails",
+      "react": "React",
+      "react19": "React 19",
+      "ts": "TypeScript",
+      "python": "Python"
+    },
+    "cta": "Get in Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Passionate full-stack developer with 5+ years of experience building scalable web applications. I love creating beautiful, user-friendly interfaces and robust backend systems.",
+    "skillsTitle": "Skills & Technologies",
+    "linkedin": "LinkedIn",
+    "contact": "Contact Me"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Here are some of my recent projects that showcase my skills in full-stack development and modern web technologies.",
+    "code": "Code",
+    "demo": "Demo",
+    "ecommerce": {
+      "title": "E-Commerce Platform",
+      "description": "Full-stack e-commerce solution built with Rails API and React frontend. Features include user authentication, payment processing, and admin dashboard."
+    },
+    "task": {
+      "title": "Task Management App",
+      "description": "Collaborative task management application with real-time updates. Built with TypeScript and featuring drag-and-drop functionality."
+    },
+    "dashboard": {
+      "title": "Data Visualization Dashboard",
+      "description": "Interactive dashboard for data visualization with charts, filters, and real-time data updates. Optimized for performance and user experience."
+    },
+    "portfolio": {
+      "title": "Portfolio Website",
+      "description": "Personal portfolio website built with Next.js and Tailwind CSS. Fully responsive and SEO optimized."
+    },
+    "chat": {
+      "title": "Chat Application",
+      "description": "Real-time chat application with private rooms and emoji support. Built using React and Firebase."
+    },
+    "blog": {
+      "title": "Blog Platform",
+      "description": "Multi-user blog platform with markdown support and comments. Built with Django and React."
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey in software development, building amazing products and growing as a developer.",
+    "senior": {
+      "title": "Senior Full-Stack Developer",
+      "company": "TechCorp Inc.",
+      "period": "2022 - Present",
+      "location": "San Francisco, CA",
+      "description": "Lead development of scalable web applications using Ruby on Rails and React. Mentor junior developers and architect system solutions.",
+      "achievements": [
+        "Reduced application load time by 40% through optimization",
+        "Led team of 5 developers on major product redesign",
+        "Implemented CI/CD pipeline reducing deployment time by 60%"
+      ]
+    },
+    "fullstack": {
+      "title": "Full-Stack Developer",
+      "company": "StartupXYZ",
+      "period": "2020 - 2022",
+      "location": "Austin, TX",
+      "description": "Developed and maintained multiple client applications using modern web technologies. Collaborated with design and product teams.",
+      "achievements": [
+        "Built 3 production applications from scratch",
+        "Integrated payment systems and third-party APIs",
+        "Improved test coverage from 30% to 95%"
+      ]
+    },
+    "junior": {
+      "title": "Junior Developer",
+      "company": "WebDev Solutions",
+      "period": "2019 - 2020",
+      "location": "Remote",
+      "description": "Started career building responsive websites and learning full-stack development. Gained experience in agile methodologies.",
+      "achievements": [
+        "Completed 20+ client projects successfully",
+        "Learned React, Node.js, and modern development practices",
+        "Contributed to open-source projects"
+      ]
+    },
+    "intern": {
+      "title": "Intern Developer",
+      "company": "CodeLab",
+      "period": "2018 - 2019",
+      "location": "New York, NY",
+      "description": "Assisted in developing internal tools and automation scripts. Participated in code reviews and team meetings.",
+      "achievements": [
+        "Automated data entry tasks saving 10+ hours/week",
+        "Wrote documentation for internal APIs",
+        "Presented at company tech talks"
+      ]
+    },
+    "freelance": {
+      "title": "Freelance Web Developer",
+      "company": "Self-Employed",
+      "period": "2017 - 2018",
+      "location": "Remote",
+      "description": "Worked with small businesses to create and maintain their web presence. Delivered custom solutions based on client needs.",
+      "achievements": [
+        "Launched 5+ business websites",
+        "Provided ongoing support and SEO optimization",
+        "Built custom WordPress themes"
+      ]
+    },
+    "ta": {
+      "title": "Teaching Assistant",
+      "company": "University of Example",
+      "period": "2016 - 2017",
+      "location": "Boston, MA",
+      "description": "Supported students in introductory programming courses. Helped design assignments and grade projects.",
+      "achievements": [
+        "Tutored 100+ students in programming fundamentals",
+        "Created interactive coding exercises",
+        "Received recognition for student support"
+      ]
+    }
+  },
+  "blog": {
+    "title": "Latest Blog Posts",
+    "subtitle": "Thoughts on web development, tutorials, and insights from my experience building modern applications.",
+    "readMore": "Read more",
+    "viewAll": "View All Posts",
+    "tags": {
+      "rails": "Ruby on Rails",
+      "api": "API",
+      "backend": "Backend",
+      "react": "React",
+      "javascript": "JavaScript",
+      "frontend": "Frontend",
+      "typescript": "TypeScript",
+      "bestpractices": "Best Practices",
+      "performance": "Performance",
+      "devops": "DevOps",
+      "docker": "Docker",
+      "cicd": "CI/CD",
+      "accessibility": "Accessibility",
+      "webdesign": "Web Design"
+    },
+    "posts": {
+      "rails": {
+        "title": "Building Scalable Rails APIs",
+        "excerpt": "Best practices for creating robust and scalable API endpoints with Ruby on Rails, including authentication, serialization, and performance optimization.",
+        "readTime": "8 min read"
+      },
+      "react19": {
+        "title": "React 19 New Features Deep Dive",
+        "excerpt": "Exploring the latest features in React 19, including the new compiler, concurrent features, and how they improve developer experience.",
+        "readTime": "12 min read"
+      },
+      "ts": {
+        "title": "TypeScript Tips for Better Code",
+        "excerpt": "Advanced TypeScript techniques that will make your code more type-safe, maintainable, and enjoyable to work with.",
+        "readTime": "6 min read"
+      },
+      "reactperf": {
+        "title": "Optimizing React Performance",
+        "excerpt": "How to profile and optimize React apps for speed, including memoization, lazy loading, and avoiding unnecessary renders.",
+        "readTime": "10 min read"
+      },
+      "docker": {
+        "title": "Deploying with Docker and GitHub Actions",
+        "excerpt": "A step-by-step guide to containerizing your app and setting up CI/CD pipelines using Docker and GitHub Actions.",
+        "readTime": "9 min read"
+      },
+      "accessibility": {
+        "title": "Accessible Web Design Essentials",
+        "excerpt": "Key principles and tools for making your web applications accessible to everyone, including ARIA roles and keyboard navigation.",
+        "readTime": "7 min read"
+      }
+    }
+  }
+}

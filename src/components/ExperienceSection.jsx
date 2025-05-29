@@ -1,78 +1,81 @@
 import { motion } from 'framer-motion';
 import { Calendar, MapPin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const ExperienceSection = () => {
+  const { t } = useTranslation();
+
   const experiences = [
     {
-      title: 'Senior Full-Stack Developer',
-      company: 'TechCorp Inc.',
-      period: '2022 - Present',
-      location: 'San Francisco, CA',
-      description: 'Lead development of scalable web applications using Ruby on Rails and React. Mentor junior developers and architect system solutions.',
+      title: t('experience.senior.title'),
+      company: t('experience.senior.company'),
+      period: t('experience.senior.period'),
+      location: t('experience.senior.location'),
+      description: t('experience.senior.description'),
       achievements: [
-        'Reduced application load time by 40% through optimization',
-        'Led team of 5 developers on major product redesign',
-        'Implemented CI/CD pipeline reducing deployment time by 60%'
+        t('experience.senior.achievements.0'),
+        t('experience.senior.achievements.1'),
+        t('experience.senior.achievements.2')
       ]
     },
     {
-      title: 'Full-Stack Developer',
-      company: 'StartupXYZ',
-      period: '2020 - 2022',
-      location: 'Austin, TX',
-      description: 'Developed and maintained multiple client applications using modern web technologies. Collaborated with design and product teams.',
+      title: t('experience.fullstack.title'),
+      company: t('experience.fullstack.company'),
+      period: t('experience.fullstack.period'),
+      location: t('experience.fullstack.location'),
+      description: t('experience.fullstack.description'),
       achievements: [
-        'Built 3 production applications from scratch',
-        'Integrated payment systems and third-party APIs',
-        'Improved test coverage from 30% to 95%'
+        t('experience.fullstack.achievements.0'),
+        t('experience.fullstack.achievements.1'),
+        t('experience.fullstack.achievements.2')
       ]
     },
     {
-      title: 'Junior Developer',
-      company: 'WebDev Solutions',
-      period: '2019 - 2020',
-      location: 'Remote',
-      description: 'Started career building responsive websites and learning full-stack development. Gained experience in agile methodologies.',
+      title: t('experience.junior.title'),
+      company: t('experience.junior.company'),
+      period: t('experience.junior.period'),
+      location: t('experience.junior.location'),
+      description: t('experience.junior.description'),
       achievements: [
-        'Completed 20+ client projects successfully',
-        'Learned React, Node.js, and modern development practices',
-        'Contributed to open-source projects'
+        t('experience.junior.achievements.0'),
+        t('experience.junior.achievements.1'),
+        t('experience.junior.achievements.2')
       ]
     },
     {
-      title: 'Intern Developer',
-      company: 'CodeLab',
-      period: '2018 - 2019',
-      location: 'New York, NY',
-      description: 'Assisted in developing internal tools and automation scripts. Participated in code reviews and team meetings.',
+      title: t('experience.intern.title'),
+      company: t('experience.intern.company'),
+      period: t('experience.intern.period'),
+      location: t('experience.intern.location'),
+      description: t('experience.intern.description'),
       achievements: [
-        'Automated data entry tasks saving 10+ hours/week',
-        'Wrote documentation for internal APIs',
-        'Presented at company tech talks'
+        t('experience.intern.achievements.0'),
+        t('experience.intern.achievements.1'),
+        t('experience.intern.achievements.2')
       ]
     },
     {
-      title: 'Freelance Web Developer',
-      company: 'Self-Employed',
-      period: '2017 - 2018',
-      location: 'Remote',
-      description: 'Worked with small businesses to create and maintain their web presence. Delivered custom solutions based on client needs.',
+      title: t('experience.freelance.title'),
+      company: t('experience.freelance.company'),
+      period: t('experience.freelance.period'),
+      location: t('experience.freelance.location'),
+      description: t('experience.freelance.description'),
       achievements: [
-        'Launched 5+ business websites',
-        'Provided ongoing support and SEO optimization',
-        'Built custom WordPress themes'
+        t('experience.freelance.achievements.0'),
+        t('experience.freelance.achievements.1'),
+        t('experience.freelance.achievements.2')
       ]
     },
     {
-      title: 'Teaching Assistant',
-      company: 'University of Example',
-      period: '2016 - 2017',
-      location: 'Boston, MA',
-      description: 'Supported students in introductory programming courses. Helped design assignments and grade projects.',
+      title: t('experience.ta.title'),
+      company: t('experience.ta.company'),
+      period: t('experience.ta.period'),
+      location: t('experience.ta.location'),
+      description: t('experience.ta.description'),
       achievements: [
-        'Tutored 100+ students in programming fundamentals',
-        'Created interactive coding exercises',
-        'Received recognition for student support'
+        t('experience.ta.achievements.0'),
+        t('experience.ta.achievements.1'),
+        t('experience.ta.achievements.2')
       ]
     }
   ];
@@ -88,7 +91,7 @@ const ExperienceSection = () => {
           className="text-center mb-16 pt-8"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Experience
+            {t('experience.title')}
           </h2>
           <motion.p 
             initial={{ opacity: 0, y: 10 }}
@@ -96,8 +99,7 @@ const ExperienceSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-slate-300 max-w-3xl mx-auto"
           >
-            My professional journey in software development, building amazing 
-            products and growing as a developer.
+            {t('experience.subtitle')}
           </motion.p>
         </motion.div>
 

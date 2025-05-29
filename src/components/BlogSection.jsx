@@ -1,49 +1,52 @@
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const BlogSection = () => {
+  const { t } = useTranslation();
+
   const posts = [
     {
-      title: 'Building Scalable Rails APIs',
-      excerpt: 'Best practices for creating robust and scalable API endpoints with Ruby on Rails, including authentication, serialization, and performance optimization.',
+      title: t('blog.posts.rails.title'),
+      excerpt: t('blog.posts.rails.excerpt'),
       date: '2024-03-15',
-      readTime: '8 min read',
-      tags: ['Ruby on Rails', 'API', 'Backend']
+      readTime: t('blog.posts.rails.readTime'),
+      tags: [t('blog.tags.rails'), t('blog.tags.api'), t('blog.tags.backend')]
     },
     {
-      title: 'React 19 New Features Deep Dive',
-      excerpt: 'Exploring the latest features in React 19, including the new compiler, concurrent features, and how they improve developer experience.',
+      title: t('blog.posts.react19.title'),
+      excerpt: t('blog.posts.react19.excerpt'),
       date: '2024-03-10',
-      readTime: '12 min read',
-      tags: ['React', 'JavaScript', 'Frontend']
+      readTime: t('blog.posts.react19.readTime'),
+      tags: [t('blog.tags.react'), t('blog.tags.javascript'), t('blog.tags.frontend')]
     },
     {
-      title: 'TypeScript Tips for Better Code',
-      excerpt: 'Advanced TypeScript techniques that will make your code more type-safe, maintainable, and enjoyable to work with.',
+      title: t('blog.posts.ts.title'),
+      excerpt: t('blog.posts.ts.excerpt'),
       date: '2024-03-05',
-      readTime: '6 min read',
-      tags: ['TypeScript', 'JavaScript', 'Best Practices']
+      readTime: t('blog.posts.ts.readTime'),
+      tags: [t('blog.tags.typescript'), t('blog.tags.javascript'), t('blog.tags.bestpractices')]
     },
     {
-      title: 'Optimizing React Performance',
-      excerpt: 'How to profile and optimize React apps for speed, including memoization, lazy loading, and avoiding unnecessary renders.',
+      title: t('blog.posts.reactperf.title'),
+      excerpt: t('blog.posts.reactperf.excerpt'),
       date: '2024-02-28',
-      readTime: '10 min read',
-      tags: ['React', 'Performance', 'Frontend']
+      readTime: t('blog.posts.reactperf.readTime'),
+      tags: [t('blog.tags.react'), t('blog.tags.performance'), t('blog.tags.frontend')]
     },
     {
-      title: 'Deploying with Docker and GitHub Actions',
-      excerpt: 'A step-by-step guide to containerizing your app and setting up CI/CD pipelines using Docker and GitHub Actions.',
+      title: t('blog.posts.docker.title'),
+      excerpt: t('blog.posts.docker.excerpt'),
       date: '2024-02-20',
-      readTime: '9 min read',
-      tags: ['DevOps', 'Docker', 'CI/CD']
+      readTime: t('blog.posts.docker.readTime'),
+      tags: [t('blog.tags.devops'), t('blog.tags.docker'), t('blog.tags.cicd')]
     },
     {
-      title: 'Accessible Web Design Essentials',
-      excerpt: 'Key principles and tools for making your web applications accessible to everyone, including ARIA roles and keyboard navigation.',
+      title: t('blog.posts.accessibility.title'),
+      excerpt: t('blog.posts.accessibility.excerpt'),
       date: '2024-02-10',
-      readTime: '7 min read',
-      tags: ['Accessibility', 'Web Design', 'Best Practices']
+      readTime: t('blog.posts.accessibility.readTime'),
+      tags: [t('blog.tags.accessibility'), t('blog.tags.webdesign'), t('blog.tags.bestpractices')]
     }
   ];
 
@@ -58,7 +61,7 @@ const BlogSection = () => {
           className="text-center mb-16 pt-8"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Latest Blog Posts
+            {t('blog.title')}
           </h2>
           <motion.p 
             initial={{ opacity: 0, y: 10 }}
@@ -66,8 +69,7 @@ const BlogSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-slate-300 max-w-3xl mx-auto"
           >
-            Thoughts on web development, tutorials, and insights from my 
-            experience building modern applications.
+            {t('blog.subtitle')}
           </motion.p>
         </motion.div>
 
@@ -110,7 +112,7 @@ const BlogSection = () => {
                 className="flex items-center text-blue-400 text-sm font-semibold"
                 whileHover={{ x: 5 }}
               >
-                <span>Read more</span>
+                <span>{t('blog.readMore')}</span>
                 <ExternalLink size={14} className="ml-1" />
               </motion.div>
             </motion.article>
@@ -128,7 +130,7 @@ const BlogSection = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            View All Posts
+            {t('blog.viewAll')}
           </motion.button>
         </motion.div>
       </div>
