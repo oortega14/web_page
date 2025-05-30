@@ -58,58 +58,8 @@
       "description": "Aplicación de chat en tiempo real con salas privadas y soporte de emojis. Construida usando React y Firebase."
     },
     "blog": {
-      "title": "Últimas Publicaciones del Blog",
-      "subtitle": "Reflexiones sobre desarrollo web, tutoriales y aprendizajes de mi experiencia creando aplicaciones modernas.",
-      "readMore": "Leer más",
-      "viewAll": "Ver todas las publicaciones",
-      "tags": {
-        "rails": "Ruby on Rails",
-        "api": "API",
-        "backend": "Backend",
-        "react": "React",
-        "javascript": "JavaScript",
-        "frontend": "Frontend",
-        "typescript": "TypeScript",
-        "bestpractices": "Buenas Prácticas",
-        "performance": "Rendimiento",
-        "devops": "DevOps",
-        "docker": "Docker",
-        "cicd": "CI/CD",
-        "accessibility": "Accesibilidad",
-        "webdesign": "Diseño Web"
-      },
-      "posts": {
-        "rails": {
-          "title": "Construyendo APIs Rails Escalables",
-          "excerpt": "Mejores prácticas para crear endpoints API robustos y escalables con Ruby on Rails, incluyendo autenticación, serialización y optimización de rendimiento.",
-          "readTime": "8 min lectura"
-        },
-        "react19": {
-          "title": "Novedades de React 19 en Profundidad",
-          "excerpt": "Explorando las últimas características de React 19, incluyendo el nuevo compilador, funciones concurrentes y mejoras para desarrolladores.",
-          "readTime": "12 min lectura"
-        },
-        "ts": {
-          "title": "Tips de TypeScript para Mejor Código",
-          "excerpt": "Técnicas avanzadas de TypeScript para que tu código sea más seguro, mantenible y agradable de trabajar.",
-          "readTime": "6 min lectura"
-        },
-        "reactperf": {
-          "title": "Optimizando el Rendimiento de React",
-          "excerpt": "Cómo perfilar y optimizar apps React para velocidad, incluyendo memoización, carga diferida y evitar renders innecesarios.",
-          "readTime": "10 min lectura"
-        },
-        "docker": {
-          "title": "Despliegue con Docker y GitHub Actions",
-          "excerpt": "Guía paso a paso para contenerizar tu app y configurar pipelines CI/CD usando Docker y GitHub Actions.",
-          "readTime": "9 min lectura"
-        },
-        "accessibility": {
-          "title": "Esenciales de Accesibilidad Web",
-          "excerpt": "Principios y herramientas clave para hacer tus aplicaciones web accesibles para todos, incluyendo roles ARIA y navegación por teclado.",
-          "readTime": "7 min lectura"
-        }
-      }
+      "title": "Plataforma de Blog",
+      "description": "Plataforma de blog multiusuario con soporte para markdown y comentarios. Construida con Django y React."
     }
   },
   "experience": {
@@ -186,6 +136,60 @@
         "Creé ejercicios interactivos de código",
         "Recibí reconocimiento por apoyo a estudiantes"
       ]
+    }
+  },
+  "blog": {
+    "title": "Últimas Publicaciones del Blog",
+    "subtitle": "Reflexiones sobre desarrollo web, tutoriales y aprendizajes de mi experiencia creando aplicaciones modernas.",
+    "readMore": "Leer más",
+    "viewAll": "Ver todas las publicaciones",
+    "tags": {
+      "rails": "Ruby on Rails",
+      "api": "API",
+      "backend": "Backend",
+      "react": "React",
+      "javascript": "JavaScript",
+      "frontend": "Frontend",
+      "typescript": "TypeScript",
+      "bestpractices": "Buenas Prácticas",
+      "performance": "Rendimiento",
+      "devops": "DevOps",
+      "docker": "Docker",
+      "cicd": "CI/CD",
+      "accessibility": "Accesibilidad",
+      "webdesign": "Diseño Web"
+    },
+    "posts": {
+      "rails": {
+        "title": "Construyendo APIs Rails Escalables",
+        "excerpt": "Mejores prácticas para crear endpoints API robustos y escalables con Ruby on Rails, incluyendo autenticación, serialización y optimización de rendimiento.",
+        "readTime": "8 min lectura"
+      },
+      "react19": {
+        "title": "Novedades de React 19 en Profundidad",
+        "excerpt": "Explorando las últimas características de React 19, incluyendo el nuevo compilador, funciones concurrentes y mejoras para desarrolladores.",
+        "readTime": "12 min lectura"
+      },
+      "ts": {
+        "title": "Tips de TypeScript para Mejor Código",
+        "excerpt": "Técnicas avanzadas de TypeScript para que tu código sea más seguro, mantenible y agradable de trabajar.",
+        "readTime": "6 min lectura"
+      },
+      "reactperf": {
+        "title": "Optimizando el Rendimiento de React",
+        "excerpt": "Cómo perfilar y optimizar apps React para velocidad, incluyendo memoización, carga diferida y evitar renders innecesarios.",
+        "readTime": "10 min lectura"
+      },
+      "docker": {
+        "title": "Despliegue con Docker y GitHub Actions",
+        "excerpt": "Guía paso a paso para contenerizar tu app y configurar pipelines CI/CD usando Docker y GitHub Actions.",
+        "readTime": "9 min lectura"
+      },
+      "accessibility": {
+        "title": "Esenciales de Accesibilidad Web",
+        "excerpt": "Principios y herramientas clave para hacer tus aplicaciones web accesibles para todos, incluyendo roles ARIA y navegación por teclado.",
+        "readTime": "7 min lectura"
+      }
     }
   }
 }

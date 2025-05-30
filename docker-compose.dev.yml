@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: docker/Dockerfile.dev
+    container_name: portfolio-dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - VITE_HOST=0.0.0.0
+      - NODE_ENV=development
+    stdin_open: true
+    tty: true
+    networks:
+      - portfolio-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: docker/Dockerfile.dev
+    container_name: portfolio-api-dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - ENVIRONMENT=development
+      - CORS_ORIGINS=http://localhost:5173
+    networks:
+      - portfolio-network
+    depends_on:
+      - frontend
+
+networks:
+  portfolio-network:
+    driver: bridge
