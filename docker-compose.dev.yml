@@ -23,11 +23,12 @@ services:
       dockerfile: docker/Dockerfile.dev
     container_name: portfolio-api-dev
     ports:
-      - "8000:8000"
+      - "3000:3000"
     volumes:
       - ./backend:/app
     environment:
-      - ENVIRONMENT=development
+      - RAILS_ENV=development
+      - BINDING=0.0.0.0
       - CORS_ORIGINS=http://localhost:5173
       - DATABASE_URL=postgresql://portfolio_user:portfolio_pass@postgres:5432/portfolio
     networks:
